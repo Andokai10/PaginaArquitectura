@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver pacientes por atenderse</title>
+</head>
+<body>
+    <h1>Consultar pacientes en espera</h1>
+    <ul>
+        {% if data %}
+            {% for row in data %}
+                <li>
+                    Rut Paciente: {{ row[1]|default('N/A') }},
+                    Rut Doctor: {{ row[2]|default('N/A') }},
+                    Fecha: {% if row[3] %}{{ row[3].strftime('%d-%m-%Y %H:%M') }}{% else %}N/A{% endif %}
+                </li>
+            {% endfor %}
+        {% else %}
+            <li>No data available</li>
+        {% endif %}
+    </ul>
+</body>
+</html>

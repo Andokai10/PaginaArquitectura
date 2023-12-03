@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina</title>
+</head>
+<body>
+    <h1>Pagina para ingresar horas</h1>
+    <form method="POST" action="/pacientes">
+        <label for="rut">Rut paciente:</label>
+        <input type="rut" id="rut" name="rut" required><br><br>
+        <label for="fecha">Fecha:</label>
+        <input type="datetime-local" id="fecha" name="fecha" required><br><br>
+        <label for="correo">Rut doctor:</label>
+        <input type="correo" id="correo" name="correo" required><br><br>
+        <label for="disponible">Haga click para confirmar:</label>
+        <input type="checkbox" id="disponible" name="disponible" required><br><br>
+        <input type="submit" value="ingresar">
+    </form>
+    <li><a href="/logouts">Salir de la sesión</a></li>
+</body>
+</html>

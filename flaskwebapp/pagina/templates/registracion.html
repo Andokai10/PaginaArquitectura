@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro paciente</title>
+</head>
+<body>
+    <h1>Registro como paciente</h1>
+    <form method="POST" action="/registro">
+        <label for="rut">Rut:</label>
+        <input type="rut" id="rut" name="rut" required><br><br>
+        <label for="nombre">Nombre:</label>
+        <input type="Nombre" id="nombre" name="nombre" required><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="apellido" id="apellido" name="apellido" required><br><br>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Contrasena:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Registrarse">
+    </form>
+</body>
+</html>
